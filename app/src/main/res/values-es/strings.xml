@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="usuario">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Ingresar</string>
+    <string name="resset_password">Recuperar contraseña</string>
+    <string name="rememberme">Recordar Usuario</string>
+    <string name="label">.</string>
+    <string name="register">Registro</string>
+    <string name="select_rol">Seleccionar Rol</string>
+    <string name="bienvenido_a">¡Bienvenido(a)!</string>
+    <string name="mdl_register_user">Módulo de Registro de Usuario</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="nombre">nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="cedula">Cédula</string>
+    <string name="telefono">Teléfono</string>
+    <string name="cellphone">Celular</string>
+    <string name="adress">Dirección</string>
+    <string name="email">Correo electrónico</string>
+    <string name="register_button">Registrarse</string>
+    <string name="rol">Selecciona tu perfil</string>
+    <string name="register_home">Registrarse</string>
+    <string name="recovery_pass">Recuperar Contraseña</string>
+    <string name="msg_registers">Aún no tienes cuenta, regístrate abajo</string>
+    <string name="Employee">Empleados</string>
+    <string name="detalis_text">Ver detalles</string>
+</resources>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PHVA</string>
+    <string name="usuario">User</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="resset_password">Pass</string>
+    <string name="rememberme">remember</string>
+    <string name="label">.</string>
+    <string name="register">Registro</string>
+    <string name="select_rol">Seleccionar Rol</string>
+    <string name="bienvenido_a">¡Bienvenido(a)!</string>
+    <string name="mdl_register_user">Módulo de Registro de Usuario</string>
+    <string name="nombre_de_usuario">Nombre de usuario</string>
+    <string name="nombre">nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="cedula">Cédula</string>
+    <string name="telefono">Teléfono</string>
+    <string name="cellphone">Celular</string>
+    <string name="adress">Dirección</string>
+    <string name="email">Correo electrónico</string>
+    <string name="register_button">Registrarse</string>
+    <string name="terms">Acepto Términos y condiciones</string>
+    <string name="rol">Selecciona tu perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_home">Registrarse</string>
+    <string name="recovery_pass">recovery_pass</string>
+    <string name="msg_registers">.</string>
+    <string name="Employee">Empleados</string>
+    <string name="detalis_text">Ver detalles</string>
+</resources>
