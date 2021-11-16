@@ -12,4 +12,5 @@
     <string name="msg_registers">.</string>
     <string name="Employee">Empleados</string>
     <string name="detalis_text">Ver detalles</string>
+    <string name="sg_sst">SG-SST</string>
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="usuario">Usuario</string>
+    <string name="User">Usuario</string>
     <string name="password">Contraseña</string>
     <string name="login">Ingresar</string>
     <string name="resset_password">Recuperar contraseña</string>
@@ -8,7 +8,7 @@
     <string name="label">.</string>
     <string name="register">Registro</string>
     <string name="select_rol">Seleccionar Rol</string>
-    <string name="bienvenido_a">¡Bienvenido(a)!</string>
+    <string name="welcome">¡Bienvenido(a)!</string>
     <string name="mdl_register_user">Módulo de Registro de Usuario</string>
     <string name="nombre_de_usuario">Nombre de usuario</string>
     <string name="nombre">nombre</string>
@@ -22,7 +22,8 @@
     <string name="rol">Selecciona tu perfil</string>
     <string name="register_home">Registrarse</string>
     <string name="recovery_pass">Recuperar Contraseña</string>
-    <string name="msg_registers">Aún no tienes cuenta, regístrate abajo</string>
+    <string name="msg_registers">¿No tiene una cuenta?</string>
     <string name="Employee">Empleados</string>
     <string name="detalis_text">Ver detalles</string>
+    <string name="sg_sst">SG-SST</string>
 </resources>
