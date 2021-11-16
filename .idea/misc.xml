@@ -24,11 +24,17 @@
         <entry key="..\:/Users/David/Desktop/David/PHVA/app/src/main/res/layout/fragment_p_cocola.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/David/Desktop/David/PHVA/app/src/main/res/layout/fragment_p_copasst.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/David/Desktop/David/PHVA/app/src/main/res/layout/fragment_supervisor.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/drawable/rounded_corner.xml" value="0.3828125" />
         <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/activity_custom_dialog.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/activity_custom_layout.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/activity_register.xml" value="0.34646739130434784" />
         <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/fragment_detail_docs.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/fragment_employee.xml" value="0.34148550724637683" />
         <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/fragment_p_be.xml" value="0.35643115942028986" />
         <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/layout/fragment_p_cocola.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/menu/toolbar.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/David/Desktop/PHVA/app/src/main/res/menu/top_bar.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

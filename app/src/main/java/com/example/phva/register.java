@@ -20,9 +20,7 @@ public class register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         text = findViewById(R.id.click);
-        text.setOnClickListener(v -> {
-            showAlertDialog();
-        });
+       text.setOnClickListener(v -> showAlertDialog());
     }
 
 

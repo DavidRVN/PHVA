@@ -14,15 +14,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btn_register = findViewById(R.id.btn_new_register);
-        TextView txt_recovery = findViewById(R.id.msg_register);
+                TextView txt_recovery = findViewById(R.id.msg_register);
+        TextView txt_register = findViewById(R.id.register_text);
         txt_recovery.setOnClickListener(v -> {
             Toast.makeText(this, "Clicked on HTML", Toast.LENGTH_LONG).show();
         });
 
-        btn_register.setOnClickListener(v -> {
+        txt_register.setOnClickListener(v -> {
             showRegister();
         });
+
     }
 
     private void showRegister() {

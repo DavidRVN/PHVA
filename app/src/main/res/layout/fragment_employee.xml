@@ -9,11 +9,20 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+
+        android:layout_height="65dp"
         android:layout_gravity="right"
-        android:text="Empleados"
+        android:text="@string/Employee"
+        android:gravity="center"
+        android:background="@color/buttons"
+        android:textColor="#FFF"
+        android:textSize="35sp"
+        android:padding="5dp"
         tools:ignore="RtlHardcoded" />
+
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -24,14 +33,31 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/addButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="88dp"
+        app:backgroundTint="@color/buttons"
+        app:tint="@color/gray_text"
+        android:src="@drawable/plus"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@id/recyclerView"
+        android:contentDescription="TODO" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="88dp"
-        android:src="@android:drawable/ic_popup_sync"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:backgroundTint="@color/buttons"
+        app:tint="@color/gray_text"
+        android:src="@drawable/qrcode"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView"
+        app:layout_constraintEnd_toEndOf="@id/recyclerView"
+        android:contentDescription="TODO" />
 
 
 </FrameLayout>
