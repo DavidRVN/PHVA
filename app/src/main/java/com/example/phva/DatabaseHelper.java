@@ -43,7 +43,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(Constants.COLUMN_URL, note.geturl());
         contentValues.put(Constants.COLUMN_TP_DOC, note.getstp_doc());
 
-       return sqLiteDatabase.insert(Constants.TABLE_NAME,  null, contentValues);
+        return sqLiteDatabase.insert(Constants.TABLE_NAME, null, contentValues);
 
     }
 
@@ -52,22 +52,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
         List<Note> dataList = new ArrayList<>();
 
-        @SuppressLint("Recycle") Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + Constants.TABLE_NAME, null);
+        Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM " + Constants.TABLE_NAME, null);
         if (cursor.moveToFirst()) {
+
 
             do {
                 Note note;
-                note = new Note
-                        (
-                                cursor.getInt(0),
-                                cursor.getString(1),
-                                cursor.getString(2),
-                                cursor.getString(3),
-                                cursor.getString(4),
-                                cursor.getString(5),
-                                cursor.getString(6),
-                                cursor.getString(7)
-                        );
+                int id = cursor.getInt(0);
+                String title = cursor.getString(1);
+                String description = cursor.getString(3);
+                String date = cursor.getString(2);
+                String url = cursor.getString(6);
+                String status = cursor.getString(5);
+                String tp_doc = cursor.getString(7);
+                String rol = cursor.getString(4);
+
+                note = new Note(id, title, description, date, url, status, tp_doc, rol);
                 dataList.add(note);
             } while (cursor.moveToNext());
         }
