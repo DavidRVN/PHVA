@@ -1,9 +1,12 @@
 package com.example.phva;
 
+
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +17,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
@@ -22,14 +27,16 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+public class CustomAdapter  extends RecyclerView.Adapter<CustomAdapter.MyViewHolder>  {
+
     private Context context;
     private List<Note> allNotes;
     private DatabaseHelper databaseHelper;
     public String urlN;
 
+
     FragmentTransaction transaction;
-    Fragment fragment_details;
+    Fragment Fdetail_docs,fempleados;
 
     public CustomAdapter(Context context, List<Note> allNotes) {
         this.context = context;
@@ -44,7 +51,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.activity_custom_layout, parent, false);
 
-
         return new MyViewHolder(view);
     }
 
@@ -56,6 +62,14 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         holder.url.setText(allNotes.get(position).geturl());
         urlN = allNotes.get(position).geturl();
 
+        Fdetail_docs = new detail_docs();
+        fempleados = new employee();
+
+        Bundle bundle =  new Bundle();
+        bundle.putString("url",urlN);
+        Fragment  detailDocs = new detail_docs();
+        detailDocs.setArguments(bundle);
+
 
         holder.layout.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -63,7 +77,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
                 TextView algo = view.findViewById(R.id.url);
 
-                Toast.makeText(context, algo.getText(), Toast.LENGTH_SHORT).show();
+                AppCompatActivity activity = (AppCompatActivity) view.getContext();
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Select Action");
@@ -71,13 +85,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 builder.setPositiveButton(R.string.detalis_text, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-
-                        Toast.makeText(context, urlN, Toast.LENGTH_SHORT).show();
-
-
-                        //
-                        // customDialog(position);
-
+                          // customDialog(position);
+                         //aqui llamo el intent
+                        activity.getSupportFragmentManager().beginTransaction().replace(R.id.content_Fragment, detailDocs).addToBackStack(null).commit();
                     }
                 });
 

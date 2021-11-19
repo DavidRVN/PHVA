@@ -87,6 +87,7 @@ public class Note {
         this.tp_doc = tp_doc;
     }
 
+
     public String getRol() {
         return rol;
     }
@@ -94,6 +95,7 @@ public class Note {
     public void setRol(String rol) {
         this.rol = rol;
     }
+
 
     public String getStatus() {
         return status;
